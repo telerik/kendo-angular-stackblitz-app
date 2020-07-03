@@ -1,0 +1,82 @@
+<div class='container-fluid'>
+	<div class='row my-4'>
+		<div class='col-12 col-lg-9 border-right'>
+			<div class='row example-wrapper'>
+				<div class='col-xs-12 col-sm-6 offset-sm-3 example-col'>
+					<div class='card'>
+						<div class='card-block example-wrap'>
+							<form class='k-form' [formGroup]='registerForm'>
+								<fieldset class='k-form-fieldset'>
+									<legend class='k-form-legend'>User Details</legend>
+									<kendo-formfield>
+										<kendo-label [for]='firstName' text='First Name'></kendo-label>
+										<input formControlName='firstName' kendoTextBox #firstName required/>
+
+										<kendo-formhint>Your first name</kendo-formhint>
+										<kendo-formerror>Error: First name is required</kendo-formerror>
+									</kendo-formfield>
+
+									<kendo-formfield>
+										<kendo-label [for]='lastName' text='Last Name'></kendo-label>
+										<input formControlName='lastName' kendoTextBox #lastName required/>
+
+										<kendo-formhint>Your last name</kendo-formhint>
+										<kendo-formerror>Error: Last name is required</kendo-formerror>
+									</kendo-formfield>
+
+									<kendo-formfield>
+										<kendo-label [for]='birthDate' [optional]='true' text='Birth Date'>
+										</kendo-label>
+										<kendo-datepicker #birthDate formControlName='birthDate' [min]='min'
+											[max]='max'>
+										</kendo-datepicker>
+
+										<kendo-formhint>Your birth date</kendo-formhint>
+									</kendo-formfield>
+
+
+									<kendo-formfield>
+										<kendo-label [for]='email' text='Email'></kendo-label>
+										<input formControlName='email' kendoTextBox #email required/>
+
+										<kendo-formhint>Your active email</kendo-formhint>
+										<kendo-formerror>Error: Not valid email format</kendo-formerror>
+									</kendo-formfield>
+
+									<kendo-formfield>
+										<div class='k-checkbox-wrap'>
+											<input #acceptNews type='checkbox' kendoCheckBox formControlName='acceptNews'/>
+											<kendo-label [for]='acceptNews' class='k-checkbox-label'
+												text='I want to receive notifications'></kendo-label>
+										</div>
+
+										<kendo-formhint>You will receive our latest updates and promotions on your email
+										</kendo-formhint>
+									</kendo-formfield>
+
+									<div class='k-form-buttons'>
+										<button class='k-button k-primary' (click)='submitForm()'>Submit</button>
+										<button class='k-button' (click)='clearForm()'>Clear</button>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='col-12 col-lg-3 mt-3 mt-lg-0'>
+			<h3>Kendo UI for Angular Forms</h3>
+			<p>
+				Kendo UI for Angular provides comprehensive support for building <a
+					href='https://angular.io/guide/forms-overview'> Angular forms</a>.
+			</p>
+			<p>
+				For the full list of components which support Reactive and Template-Driven Forms, refer to the article	on <a href='https://www.telerik.com/kendo-angular-ui/components/forms/forms-support/'>forms support by	Kendo UI for Angular</a>.
+			</p>
+			<p>For documentation and demos of the many form-friendly components please visit the <a
+					href='https://www.telerik.com/kendo-angular-ui/components/forms/forms-guideline/'> Forms Guideline
+					article</a></p>
+		</div>
+	</div>
+</div>

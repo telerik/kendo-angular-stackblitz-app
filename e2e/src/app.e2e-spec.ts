@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to kendo-angular-seed!');
+    expect(page.getTitleText()).toEqual('kendo-angular-stackblitz-app app is running!');
   });
 
   afterEach(async () => {

@@ -1,4 +1,5 @@
-# kendo-angular-stackblitz-app
+# KendoAngularStackblitzApp
+
 This is the Stackblitz demo app
 
 Steps to run:

@@ -12,7 +12,7 @@ import YoutubeIcon from '../../../assets/youtube.svg';
         <div>
           <div class='mb-2 links'>
             <a
-              href='https://www.telerik.com/purchase/license-agreement/progress-kendoreact?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-react-awareness-license-agreement'
+              href='https://www.telerik.com/purchase/license-agreement/kendo-ui?utm_medium=cpm&utm_source=stackblitz-app&utm_campaign=kendo-ui-angular-trial-sb-featured-app'
               >License Agreement</a
             >
           </div>
